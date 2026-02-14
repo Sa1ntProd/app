@@ -93,10 +93,10 @@
 
     
     
-    <main >
-            <main class="main" id="top">
-        <div class="container-fluid" data-layout="container">
-            <nav class="navbar navbar-light navbar-vertical navbar-expand-xl" style="display: none">
+    <main     class="main" id="top"
+>
+            <div class="container-fluid" data-layout="container">
+        <nav class="navbar navbar-light navbar-vertical navbar-expand-xl" style="display: none">
     <script>
         var navbarStyle = localStorage.getItem("navbarStyle");
         if (navbarStyle && navbarStyle !== 'transparent') {
@@ -218,6 +218,28 @@
                         <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/social/notifications">Notifications</a></li>
                         <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/social/followers">Followers</a></li>
                     </ul>
+                    <a class="nav-link dropdown-indicator" href="#ecommerce" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="ecommerce">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-shopping-bag"></span></span>
+                            <span class="nav-link-text ps-1">E-commerce</span>
+                        </div>
+                    </a>
+                    <ul class="nav collapse" id="ecommerce">
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/ecommerce/customers">Customers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/ecommerce/product/product-grid">Product grid</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/ecommerce/product/product-list">Product list</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/ecommerce/orders/order-list">Orders</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-indicator" href="#elearning" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="elearning">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-book-open"></span></span>
+                            <span class="nav-link-text ps-1">E-learning</span>
+                        </div>
+                    </a>
+                    <ul class="nav collapse" id="elearning">
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/elearning/course/course-list">Course list</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/app/elearning/course/course-grid">Course grid</a></li>
+                    </ul>
                 </li>
                 
                 
@@ -226,6 +248,12 @@
                         <div class="col-auto navbar-vertical-label">Pages</div>
                         <div class="col ps-0"><hr class="mb-0 navbar-vertical-divider" /></div>
                     </div>
+                    <a class="nav-link" href="http://ns.loc/pages/starter" role="button">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-file"></span></span>
+                            <span class="nav-link-text ps-1">Starter</span>
+                        </div>
+                    </a>
                     <a class="nav-link dropdown-indicator" href="#user" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="user">
                         <div class="d-flex align-items-center">
                             <span class="nav-link-icon"><span class="fas fa-user"></span></span>
@@ -264,6 +292,60 @@
                         <li class="nav-item"><a class="nav-link" href="http://ns.loc/auth/forgot-password">Forgot password</a></li>
                         <li class="nav-item"><a class="nav-link" href="http://ns.loc/auth/reset-password">Reset password</a></li>
                     </ul>
+                    <a class="nav-link" href="http://ns.loc/pages/kanban" role="button">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-tasks"></span></span>
+                            <span class="nav-link-text ps-1">Kanban</span>
+                        </div>
+                    </a>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <div class="row navbar-vertical-label-wrapper mt-3 mb-2">
+                        <div class="col-auto navbar-vertical-label">Modules</div>
+                        <div class="col ps-0"><hr class="mb-0 navbar-vertical-divider" /></div>
+                    </div>
+                    <a class="nav-link dropdown-indicator" href="#components" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="components">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-puzzle-piece"></span></span>
+                            <span class="nav-link-text ps-1">Components</span>
+                        </div>
+                    </a>
+                    <ul class="nav collapse" id="components">
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/cards">Cards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/buttons">Buttons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/badges">Badges</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/alerts">Alerts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/modals">Modals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/accordion">Accordion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/pagination">Pagination</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/spinners">Spinners</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/tooltips">Tooltips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/breadcrumb">Breadcrumb</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/progress">Progress</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/components/tabs">Tabs</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-indicator" href="#forms" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="forms">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-edit"></span></span>
+                            <span class="nav-link-text ps-1">Forms</span>
+                        </div>
+                    </a>
+                    <ul class="nav collapse" id="forms">
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/forms/basic">Basic forms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/forms/advanced">Advanced forms</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-indicator" href="#tables" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="tables">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon"><span class="fas fa-table"></span></span>
+                            <span class="nav-link-text ps-1">Tables</span>
+                        </div>
+                    </a>
+                    <ul class="nav collapse" id="tables">
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/tables/basic">Basic tables</a></li>
+                        <li class="nav-item"><a class="nav-link" href="http://ns.loc/modules/tables/advanced">Advanced tables</a></li>
+                    </ul>
                 </li>
                 
                 
@@ -289,9 +371,9 @@
         </div>
     </div>
 </nav>
-            
-            <div class="content">
-                <nav class="navbar navbar-light navbar-glass navbar-top navbar-top-vertical navbar-expand" style="display: none">
+        
+        <div class="content">
+            <nav class="navbar navbar-light navbar-glass navbar-top navbar-top-vertical navbar-expand" style="display: none">
     <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
     </button>
@@ -347,7 +429,7 @@
         </li>
     </ul>
 </nav>
-                <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg" style="display: none">
+            <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg" style="display: none">
     <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
     </button>
@@ -426,7 +508,7 @@
         </li>
     </ul>
 </nav>
-                <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg navbar-top-combo" style="display: none" data-navbar-top="combo" data-move-target="#navbarVerticalNav">
+            <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg navbar-top-combo" style="display: none" data-navbar-top="combo" data-move-target="#navbarVerticalNav">
     <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggle-icon"><span class="toggle-line"></span></span>
     </button>
@@ -482,7 +564,7 @@
         </li>
     </ul>
 </nav>
-                <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg navbar-double-top" style="display: none">
+            <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand-lg navbar-double-top" style="display: none">
     <div class="w-100">
         <div class="d-flex flex-between-center">
             <button class="btn navbar-toggler-humburger-icon navbar-toggler me-1 me-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDoubleTop" aria-controls="navbarDoubleTop" aria-expanded="false" aria-label="Toggle Navigation">
@@ -550,8 +632,8 @@
         </div>
     </div>
 </nav>
-                
-                <script>
+            
+            <script>
     var navbarPosition = localStorage.getItem('navbarPosition');
     var navbarVertical = document.querySelector('.navbar-vertical');
     var navbarTopVertical = document.querySelector('.navbar-top-vertical');
@@ -589,26 +671,26 @@
         if (navbarTopCombo) navbarTopCombo.remove();
     }
 </script>
-                
-                
-                <script>
-                    (function() {
-                        var isFluid = JSON.parse(localStorage.getItem('isFluid'));
-                        var container = document.querySelector('[data-layout="container"]');
-                        if(container) {
-                            if(isFluid === true) {
-                                container.classList.remove('container');
-                                container.classList.add('container-fluid');
-                            } else if(isFluid === false) {
-                                container.classList.remove('container-fluid');
-                                container.classList.add('container');
-                            }
-                            // If isFluid is null, keep the server-side default from config
+            
+            
+            <script>
+                (function() {
+                    var isFluid = JSON.parse(localStorage.getItem('isFluid'));
+                    var container = document.querySelector('[data-layout="container"]');
+                    if(container) {
+                        if(isFluid === true) {
+                            container.classList.remove('container');
+                            container.classList.add('container-fluid');
+                        } else if(isFluid === false) {
+                            container.classList.remove('container-fluid');
+                            container.classList.add('container');
                         }
-                    })();
-                </script>
-                
-                    <div class="row g-3 mb-3">
+                        // If isFluid is null, keep the server-side default from config
+                    }
+                })();
+            </script>
+            
+                <div class="row g-3 mb-3">
         <div class="col-md-6 col-xxl-3">
             <div class="card h-100">
     <div class="card-body">
@@ -882,7 +964,7 @@
         </div>
     </div>
 
-                                    <footer class="footer" >
+                            <footer class="footer" >
     <div class="row g-0 justify-content-between fs-10 mt-4 mb-3">
         <div class="col-12 col-sm-auto text-center">
             <p class="mb-0 text-600">
@@ -897,13 +979,12 @@
         </div>
     </div>
 </footer>
-                            </div>
-            
-            <div class="modal fade" id="authentication-modal" tabindex="-1" role="dialog" aria-labelledby="authentication-modal-label" aria-hidden="true">
+                    </div>
+        
+        <div class="modal fade" id="authentication-modal" tabindex="-1" role="dialog" aria-labelledby="authentication-modal-label" aria-hidden="true">
     
 </div>
-        </div>
-    </main>
+    </div>
     </main>
     
 
